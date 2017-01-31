@@ -8,64 +8,70 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="#e99"
-        android:paddingLeft="10dp">
+        android:background="#e99">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="profile"
-            android:textStyle="bold"
+            android:text="email"
             android:textColor="#000"
-            android:textSize="40dp"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#ef6"
-        android:paddingLeft="10dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="comments"
-            android:textSize="40dp"
-            android:textStyle="bold"
-            android:textColor="#000"
-            android:id="@+id/text"
+            android:textSize="20dp"
+            android:padding="30dp"
             />
-    </LinearLayout>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#eff"
-        android:paddingLeft="10dp"
-        >
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="like"
-            android:textSize="40dp"
-            android:textColor="#000"
-            android:textStyle="bold"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text=""
+           android:textColor="#fff"
+           android:textSize="10dp"
+           />
+
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="150dp"
-        android:background="#99f"
-        android:paddingLeft="10dp"
-        >
+        android:background="#e9e">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="share"
-            android:textStyle="bold"
-            android:textSize="40dp"
+            android:text="password"
+            android:textSize="15dp"
             android:textColor="#000"
+            android:padding="30dp"
             />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="10dp"
+            />
+        </LinearLayout>
+
+
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="go"
+            android:textColor="#000"
+            android:textSize="30dp"
+            android:padding="10dp"
+            android:layout_marginLeft="130dp"
+
+
+
+        </Button>
+
+
+
+
+
     </LinearLayout>
+
+
+
 
 
 
