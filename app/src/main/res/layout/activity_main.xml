@@ -1,74 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-
-    <LinearLayout
+    tools:context=".MainActivity"
+    >
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#e99">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="email"
-            android:textColor="#000"
-            android:textSize="20dp"
-            android:padding="30dp"
-            />
-       <Button
-           android:layout_width="wrap_content"
-           android:layout_height="wrap_content"
-           android:text=""
-           android:textColor="#fff"
-           android:textSize="10dp"
-           />
-
-
-    </LinearLayout>
-    <LinearLayout
+        android:layout_height="wrap_content"
+        android:hint="enter first number"
+        android:inputType="number"
+        android:id="@+id/first"
+        android:textColor="#000"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:background="#e9e">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="password"
-            android:textSize="15dp"
-            android:textColor="#000"
-            android:padding="30dp"
-            />
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textColor="#fff"
-            android:textSize="10dp"
-            />
-        </LinearLayout>
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/first"
+        android:hint="enter second number"
+        android:inputType="number"
+        android:id="@+id/second"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="20dp"
+        android:id="@+id/result"
+        android:layout_centerInParent="true"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="ADD"
+        android:id="@+id/button"
+        android:layout_below="@+id/second"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button2"
+        android:text="SUB"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/second"
+        android:layout_toRightOf="@+id/button"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="mul"
+        android:layout_marginTop="20dp"
+        android:id="@+id/button3"
+        android:layout_below="@+id/second"
+        android:layout_toRightOf="@+id/button2"
+        />
+
+</RelativeLayout>
 
 
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="go"
-            android:textColor="#000"
-            android:textSize="30dp"
-            android:padding="10dp"
-            android:layout_marginLeft="130dp"
-
-
-
-        </Button>
 
 
 
 
 
-    </LinearLayout>
+
+
 
 
 
